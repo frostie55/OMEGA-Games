@@ -7,6 +7,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OMEGA GAMES</title>
+.game-thumbnail {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    display: block;
+}
+.game-card {
+    background: #071a2b;
+    border: 1px solid #00d9ff;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 0 12px rgba(0, 217, 255, 0.2);
+    transition: 0.3s ease;
+}
+
+.game-card:hover {
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.6);
+    transform: translateY(-4px);
+}
 
   <style>
     body {
@@ -75,10 +97,12 @@
 
     
 <div class="terminal">
-  <h2>GAME DATABASE</h2>
+  <h2>`</h2>
   <p>Select a game to begin.</p>
 
   <div class="game-card">
+        <img src="https://placehold.co/600x350/071a2b/00d9ff?text=GAME+001" alt="Game 001 thumbnail" class="game-thumbnail">
+
     <h3>GAME 001</h3>
     <p>First game slot</p>
     <a href="https://example.com" target="_blank">
